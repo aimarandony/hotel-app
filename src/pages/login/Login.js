@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/login.css";
 import { Button, Input, Form, Divider } from "antd";
 import {
@@ -6,16 +6,24 @@ import {
   LockOutlined,
   UserOutlined,
 } from "@ant-design/icons";
+import { useHistory } from "react-router-dom";
 
-export const Login = () => {
+export const Login = ({ auth, setAuth }) => {
+  const history = useHistory();
   const [loadSubmit, setLoadSubmit] = useState(false);
 
   const submit = () => {
     setLoadSubmit(true);
     setTimeout(() => {
       setLoadSubmit(false);
-    }, 2000);
+      setAuth(true);
+    }, 1000);
   };
+  useEffect(() => {
+    if (auth) {
+      history.push("/inicio");
+    }
+  }, [auth, history]);
 
   return (
     <div className="Login">

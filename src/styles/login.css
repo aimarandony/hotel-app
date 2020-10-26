@@ -6,14 +6,10 @@
 .Login .cover {
   width: calc(100% - 400px);
   height: 100%;
-  background-image: url(../images/hotel-cover-05.jpg);
+  background-image: url(../images/hotel-cover-06.jpg);
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.713);
   transition: all .3s ease-in-out;
-}
-.Login .cover:hover{
-  background-image: url(../images/hotel-cover-01.jpg);
 }
 .Login .login {
   width: 600px;

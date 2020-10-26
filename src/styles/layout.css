@@ -1,0 +1,21 @@
+.ant-layout .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.ant-layout-header {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ant-dropdown-trigger {
+  display: flex;
+  align-items: center;
+}
